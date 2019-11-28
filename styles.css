@@ -1,0 +1,185 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Ligth_Cyan: hsl(179, 55%, 48%);
+    --Bright_Yellow: hsl(71, 73%, 54%);
+    --Light_Gray: hsl(204, 43%, 93%);
+    --Grayish_Blue: hsl(218, 22%, 67%);
+}
+
+body {
+    background: var(--Light_Gray);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    font-family: "Karla", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.page_container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: 50% 0;
+    border-radius: 1rem;
+    flex-wrap: nowrap;
+}
+
+.header {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+h1 {
+    color: var(--Cyan);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+h3 {
+    color: var(--Bright_Yellow);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.header p{
+    font-size: 0.9rem;
+    color: var(--Grayish_Blue);
+    line-height: 1.5rem;
+}
+
+.subscription {
+    background: var(--Cyan);
+    color: white;
+    padding: 1.5rem 1.5rem;
+}
+
+h2 {
+    color: white;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.price_container {
+    display: flex;
+    align-items: center;
+    color: var(--Light_Gray);
+}
+
+.price {
+    font-size: 2rem;
+    padding-right: 1rem;
+    color: white;
+}
+
+button{
+    font-family: "Karla", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
+    height: 3rem;
+    color: white;
+    background: var(--Bright_Yellow);
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0px 3px 6px 5px rgba(50, 50, 50, 0.2);
+    cursor: pointer;
+}
+
+.why_us {
+    padding: 1.5rem 1.5rem;
+    background: var(--Ligth_Cyan);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    color: var(--Light_Gray);
+    font-size: 0.9rem;
+    height: 1.3rem;
+}
+
+@media screen and (min-width: 720px) {
+
+ .page_container {   
+     max-width: 1440px;
+     flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    border-radius: 0;
+    padding: 1.5rem 4rem;
+}
+
+h1 {
+    font-size: 2.7rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.header p{
+    font-size: 2rem;
+    line-height: 1.5;
+    white-space: pre-line;
+}
+
+.subscription, .why_us {
+    flex-grow: 1;
+    flex-basis: 25%;
+    padding: 1rem 4rem;
+    height: 50%;
+}
+
+.why_us {
+    border-radius: 0;
+}
+
+li {
+    font-size: 1.6rem;
+    height: 2rem;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.price_container {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.subscription p{
+    margin-top: 0.5rem;
+    font-size: 1.7rem;
+}
+
+button {
+    height: 5rem;
+    width: 80%;
+    font-size: 2rem;
+}
+
+}
